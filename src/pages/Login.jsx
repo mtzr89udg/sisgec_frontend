@@ -1,0 +1,1 @@
+import {login} from '../services/api';export default function Login({onLogin}){async function s(e){e.preventDefault();const d=await login(e.target.u.value,e.target.p.value);onLogin(d)}return (<form onSubmit={s}><h2>Login SISGEC</h2><input name='u'/><input name='p' type='password'/><button>Entrar</button></form>)}

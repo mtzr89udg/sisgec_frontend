@@ -1,1 +1,1 @@
-export default function App(){return <h1>SISGEC Frontend</h1>}
+import {useState} from 'react';import Login from './pages/Login';import Dashboard from './pages/Dashboard';export default function App(){const [u,setU]=useState(null);return u?<Dashboard user={u}/>:<Login onLogin={setU}/>;}
